@@ -60,14 +60,14 @@ struct PlayMode : Mode
 	std::array<int, PPU466::BackgroundWidth * PPU466::BackgroundHeight> background_info;
 
 	float elasped_time = 0.0f;
+	float game_end_elasped = 0.0f;
 	const int trap_change_time = 5;
+	bool trap_in_effect = false;
 
 	int prev_len_x;
 	int prev_len_y;
 	int prev_pos_x;
 	int prev_pos_y;
-
-	bool trap_in_effect = false;
 
 	const int caught_max_num = 6;
 	int caught_current_num = 0;

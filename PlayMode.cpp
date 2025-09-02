@@ -10,7 +10,6 @@
 #include <set>
 #include <map>
 
-
 bool contains_color(PPU466::Palette const &palette, glm::u8vec4 const &color, int &index)
 {
 	for (int i = 0; i < 4; i++)
@@ -498,18 +497,28 @@ void PlayMode::update(float elapsed)
 
 	if (game_over && !game_over_loaded)
 	{
-		load_background("assets/lose.png");
-		game_over_loaded = true;
-		return;
+		game_end_elasped += elapsed;
+		if (game_end_elasped > 0.5f)
+		{
+			load_background("assets/lose.png");
+			game_over_loaded = true;
+			game_end_elasped = 0.0f;
+			return;
+		}
 	}
 	if (game_over)
 		return;
 
 	if (game_win && !game_win_loaded)
 	{
-		load_background("assets/win.png");
-		game_win_loaded = true;
-		return;
+		game_end_elasped += elapsed;
+		if (game_end_elasped > 0.5f)
+		{
+			load_background("assets/win.png");
+			game_win_loaded = true;
+			game_end_elasped = 0.0f;
+			return;
+		}
 	}
 	if (game_win)
 		return;
