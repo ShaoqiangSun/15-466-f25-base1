@@ -64,7 +64,7 @@ int main(int argc, char **argv) {
 
 	//create window:
 	Mode::window = SDL_CreateWindow(
-		"gp25 game1: Sprite-Based Game by Dennis", //TODO: remember to set a title for your game!
+		"gp25 game1: Hunter and Prey", //TODO: remember to set a title for your game!
 		2*PPU466::ScreenWidth + 8, 2*PPU466::ScreenHeight + 8, //TODO: modify window size if you'd like
 		SDL_WINDOW_OPENGL
 		| SDL_WINDOW_RESIZABLE //uncomment to allow resizing

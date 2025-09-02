@@ -1,8 +1,11 @@
-# Sprite-Based Game by Dennis
+# Hunter and Prey
 
 Author: Dennis Sun
 
-Design: This game combines the mechanisms of avoiding traps on the ground, dodging enemies, and chasing targets. 
+Design: This game combines three mechanics:  
+- Avoiding traps on the ground (inspired by *Pummel Party* and *It Takes Two*)  
+- Dodging enemies (inspired by my team’s game in the *Building Virtual Worlds* course)  
+- Chasing targets
 
 Screen Shot:
 
@@ -34,13 +37,15 @@ Sprites
 
 How To Play:
 
+Controls: Use the arrow keys to control player ![player](assets/player.png) movement. 
+
 Avoid the traps (![trap1](assets/trap1.png)![trap2](assets/trap2.png))! When traps first appear, they are yellow. In this state, you can still step on them safely—they serve as a warning. When they turn red, if you step on them, you will lose the game. 
 
 Dodge the ![enemy](assets/enemy.png) sprite! If you touch them, you will lose the game.
 
 Chase the ![target](assets/target.png) sprite! Collect all of them to win the game.
 
-Controls: Use the arrow keys to control player movement. 
+
 
 
 
